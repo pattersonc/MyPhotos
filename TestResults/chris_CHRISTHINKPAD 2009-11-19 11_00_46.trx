@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ba82d99c-93f6-434c-b149-675a9b972d42" name="chris@CHRISTHINKPAD 2009-11-19 11:00:46" runUser="christhinkpad\chris" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="aaa8ccf6-5eb7-4c53-b29d-84bc77d3315a">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\chris\Work\Patterson\MyPhotos\TestResults\chris_CHRISTHINKPAD 2009-11-19 11_00_46">
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.Core.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\FluentNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Core\bin\Debug\MyPhotos.Core.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-11-19T11:00:46.4190663-05:00" queuing="2009-11-19T11:00:54.6325360-05:00" start="2009-11-19T11:00:54.9885564-05:00" finish="2009-11-19T11:03:27.6862902-05:00" />
+  <TestDefinitions>
+    <UnitTest name="BuildDatabase" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="3dc0bbcf-9621-d203-abcf-cc387be54a8e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5fef2333-cd1e-4b56-905f-e72bac44daf8" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.UnitTest1, MyPhotos.Tests" name="BuildDatabase" />
+    </UnitTest>
+    <UnitTest name="CanAddData" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="d10a7591-ddd5-60b3-664e-0deb05ca5257">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b4ccb99a-1a48-4753-ba92-aa17e7c1f675" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.UnitTest1, MyPhotos.Tests" name="CanAddData" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3dc0bbcf-9621-d203-abcf-cc387be54a8e" executionId="5fef2333-cd1e-4b56-905f-e72bac44daf8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d10a7591-ddd5-60b3-664e-0deb05ca5257" executionId="b4ccb99a-1a48-4753-ba92-aa17e7c1f675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5fef2333-cd1e-4b56-905f-e72bac44daf8" testId="3dc0bbcf-9621-d203-abcf-cc387be54a8e" testName="BuildDatabase" computerName="CHRISTHINKPAD" duration="00:00:00.4923688" startTime="2009-11-19T11:00:55.3015743-05:00" endTime="2009-11-19T11:01:36.4439275-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b4ccb99a-1a48-4753-ba92-aa17e7c1f675" testId="d10a7591-ddd5-60b3-664e-0deb05ca5257" testName="CanAddData" computerName="CHRISTHINKPAD" duration="00:01:49.2152735" startTime="2009-11-19T11:01:36.4549282-05:00" endTime="2009-11-19T11:03:25.6781754-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
