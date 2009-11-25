@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="924f7539-2109-4db6-9dfb-82052e99adf9" name="chris@CHRISTHINKPAD 2009-11-25 14:50:19" runUser="christhinkpad\chris" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="aaa8ccf6-5eb7-4c53-b29d-84bc77d3315a">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\chris\Work\Patterson\MyPhotos\TestResults\chris_CHRISTHINKPAD 2009-11-25 14_50_19">
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Core\bin\Debug\MyPhotos.Core.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.Core.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.Linq.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\FluentNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\moq\Moq.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.DynamicProxy2.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-11-25T14:50:19.5463894-05:00" queuing="2009-11-25T14:50:20.8724653-05:00" start="2009-11-25T14:50:21.0534756-05:00" finish="2009-11-25T14:50:22.3515499-05:00" />
+  <TestDefinitions>
+    <UnitTest name="GetAll_returns_100_albums" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="a0de976d-b076-c9b1-3f7d-54c9a98eee39">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f29f5fe2-d33b-4b8b-942e-28c490748b13" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.ServiceTests.AlbumServiceTests, MyPhotos.Tests" name="GetAll_returns_100_albums" />
+    </UnitTest>
+    <UnitTest name="GetAll_returns_not_null" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="2063b600-b187-1a45-0522-8ff517380374">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="736762b5-ab4e-4856-8572-f8a0a22f2954" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.ServiceTests.AlbumServiceTests, MyPhotos.Tests" name="GetAll_returns_not_null" />
+    </UnitTest>
+    <UnitTest name="GetById_with_valid_id_returns_not_null" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="55ce3137-ba05-325e-5149-a27092d6ad55">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a4f98242-9fda-445e-b904-e12e3c4f09f0" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.ServiceTests.AlbumServiceTests, MyPhotos.Tests" name="GetById_with_valid_id_returns_not_null" />
+    </UnitTest>
+    <UnitTest name="GetById_with_exception_thrown_by_repo_returns_null" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="3cb05db2-4079-ef9b-0854-b270ff532756">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="73eebc0b-8e9e-488c-8437-40248b4a595a" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.ServiceTests.AlbumServiceTests, MyPhotos.Tests" name="GetById_with_exception_thrown_by_repo_returns_null" />
+    </UnitTest>
+    <UnitTest name="GetById_with_invalid_id_returns_null" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="b16ddb5a-46ee-6643-9a7a-a36685e465a8">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="dd0caa1a-c055-4d5d-8f64-21613a6cddcc" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.ServiceTests.AlbumServiceTests, MyPhotos.Tests" name="GetById_with_invalid_id_returns_null" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="55ce3137-ba05-325e-5149-a27092d6ad55" executionId="a4f98242-9fda-445e-b904-e12e3c4f09f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b16ddb5a-46ee-6643-9a7a-a36685e465a8" executionId="dd0caa1a-c055-4d5d-8f64-21613a6cddcc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3cb05db2-4079-ef9b-0854-b270ff532756" executionId="73eebc0b-8e9e-488c-8437-40248b4a595a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2063b600-b187-1a45-0522-8ff517380374" executionId="736762b5-ab4e-4856-8572-f8a0a22f2954" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0de976d-b076-c9b1-3f7d-54c9a98eee39" executionId="f29f5fe2-d33b-4b8b-942e-28c490748b13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a4f98242-9fda-445e-b904-e12e3c4f09f0" testId="55ce3137-ba05-325e-5149-a27092d6ad55" testName="GetById_with_valid_id_returns_not_null" computerName="CHRISTHINKPAD" duration="00:00:00.3217971" startTime="2009-11-25T14:50:21.1664821-05:00" endTime="2009-11-25T14:50:22.2965467-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd0caa1a-c055-4d5d-8f64-21613a6cddcc" testId="b16ddb5a-46ee-6643-9a7a-a36685e465a8" testName="GetById_with_invalid_id_returns_null" computerName="CHRISTHINKPAD" duration="00:00:00.0030528" startTime="2009-11-25T14:50:22.3005470-05:00" endTime="2009-11-25T14:50:22.3065473-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="73eebc0b-8e9e-488c-8437-40248b4a595a" testId="3cb05db2-4079-ef9b-0854-b270ff532756" testName="GetById_with_exception_thrown_by_repo_returns_null" computerName="CHRISTHINKPAD" duration="00:00:00.0018102" startTime="2009-11-25T14:50:22.3085474-05:00" endTime="2009-11-25T14:50:22.3135477-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <DebugTrace>Repo exception
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="736762b5-ab4e-4856-8572-f8a0a22f2954" testId="2063b600-b187-1a45-0522-8ff517380374" testName="GetAll_returns_not_null" computerName="CHRISTHINKPAD" duration="00:00:00.0030759" startTime="2009-11-25T14:50:22.3135477-05:00" endTime="2009-11-25T14:50:22.3215482-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f29f5fe2-d33b-4b8b-942e-28c490748b13" testId="a0de976d-b076-c9b1-3f7d-54c9a98eee39" testName="GetAll_returns_100_albums" computerName="CHRISTHINKPAD" duration="00:00:00.0034496" startTime="2009-11-25T14:50:22.3255484-05:00" endTime="2009-11-25T14:50:22.3335489-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
