@@ -64,7 +64,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="System.Data.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -86,32 +85,16 @@
     <EmbeddedResource Include="IntegrationObjs\Desert.jpg" />
     <EmbeddedResource Include="IntegrationObjs\Lighthouse.jpg" />
     <EmbeddedResource Include="IntegrationObjs\Penguins.jpg" />
-=======
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IntegrationTests\NHibernateCRUDTests.cs" />
-    <Compile Include="ServiceTests\AlbumServiceTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AuthoringTests.txt" />
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyPhotos.Core\MyPhotos.Core.csproj">
       <Project>{A6551E0F-8284-42F1-B436-238B344F63D0}</Project>
       <Name>MyPhotos.Core</Name>
     </ProjectReference>
-<<<<<<< HEAD
     <ProjectReference Include="..\MyPhotos.WebUI\MyPhotos.WebUI.csproj">
       <Project>{C5E65172-ED33-4893-BF0E-59AF10C04DCB}</Project>
       <Name>MyPhotos.WebUI</Name>
     </ProjectReference>
-=======
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ControllerTests\" />
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

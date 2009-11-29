@@ -7,32 +7,23 @@ using MyPhotos.Core.Repository;
 
 namespace MyPhotos.Core.Service
 {
-<<<<<<< HEAD
 
-=======
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     public interface IAlbumService
     {
         Album GetById(int id);
         List<Album> GetAll();
-<<<<<<< HEAD
         void Add(Album album);
         void Save();
         Photo GetNextPhoto(Photo photo);
         Photo GetPreviousPhoto(Photo photo);
-=======
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     }
 
     public class AlbumService : IAlbumService
     {
         protected IAlbumRepository _albumRespository;
 
-<<<<<<< HEAD
         public AlbumService() : this(null) {}
 
-=======
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
         public AlbumService(IAlbumRepository albumRepository)
         {
             _albumRespository = albumRepository ?? new AlbumRepository();
@@ -62,7 +53,6 @@ namespace MyPhotos.Core.Service
 
             return albums;
         }
-<<<<<<< HEAD
 
         public void Add(Album album)
         {
@@ -107,7 +97,5 @@ namespace MyPhotos.Core.Service
             }
         }
 
-=======
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     }
 }

@@ -1,11 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ProjectExtensions>
     <VisualStudio>
-<<<<<<< HEAD
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-=======
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" xmlns="">
->>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
         <WebProjectProperties>
           <StartPageUrl>
           </StartPageUrl>
