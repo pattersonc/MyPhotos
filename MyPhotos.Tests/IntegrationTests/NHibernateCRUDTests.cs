@@ -5,10 +5,11 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyPhotos.Core.Data.NHibernate;
 using MyPhotos.Core.Model;
+using MyPhotos.Core.Service;
 using NHibernate;
 using NHibernate.Linq;
 
-namespace MyPhotos.Tests
+namespace MyPhotos.Test.IntegrationTests
 {
     /// <summary>
     /// Summary description for NHibernateCRUDTests
@@ -72,7 +73,7 @@ namespace MyPhotos.Tests
         {
             // recreate db for fresh start
             SessionFactoryFactory.DropSchema();
-            SessionFactoryFactory.CreateSchema();           
+            SessionFactoryFactory.CreateSchema();
         }
         
         public void AddTestData()
@@ -83,29 +84,57 @@ namespace MyPhotos.Tests
                 {
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Name = "MyAlbum"
+                    Name = "Samples"
                 };
 
 
-                var photo = new Photo()
+                var photo1 = new Photo()
                 {
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
-                    Description = "MyPhoto",
-                    Album = album
+                    Description = "Desert",
+                    Album = album,
+                    Filename = "desert.jpg",
+                    ThumbFilename = "desert_thumb.jpg"
+
                 };
 
-                var tags = new List<Tag>();
+                var photo2 = new Photo()
+                {
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    Description = "Lighthouse",
+                    Album = album,
+                    Filename = "lighthouse.jpg",
+                    ThumbFilename = "lighthouse_thumb.jpg"
+                };
 
-                for (int i = 1; i <= 5; i++)
-                    tags.Add(new Tag() { Name = "Tag" + i });
+                var photo3 = new Photo()
+                {
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    Description = "Penguins",
+                    Album = album,
+                    Filename = "penguins.jpg",
+                    ThumbFilename = "penguins_thumb.jpg"
+                };
 
-                photo.Tags = tags;
+                album.Photos = new List<Photo>() { photo1, photo2, photo3};
+
+                var tag = new Tag()
+                {
+                    Name = "Sample"
+                };
+
+                if (photo1.Tags == null) photo1.Tags = new List<Tag>() { tag };
+                if (photo2.Tags == null) photo2.Tags = new List<Tag>() { tag };
+                if (photo3.Tags == null) photo3.Tags = new List<Tag>() { tag };
 
                 session.SaveOrUpdate(album);
-                session.SaveOrUpdate(photo);
                 session.Flush();
+            
             }
+
         }
 
         [TestMethod]
@@ -116,15 +145,13 @@ namespace MyPhotos.Tests
             using(var session = _sessionFactory.OpenSession())
             {
                 var album = (from p in session.Linq<Album>()
-                            where p.Name == "MyAlbum"
+                            where p.Name == "Samples"
                             select p).Single();
 
                 Assert.IsNotNull(album);
-                Assert.AreEqual("MyAlbum", album.Name);
-                Assert.AreEqual(1, album.Photos.Count);
-                Assert.AreEqual("MyPhoto", album.Photos.Single().Description);
-                Assert.IsNotNull(album.Photos.Single().Tags);
-                Assert.AreEqual(5, album.Photos.Single().Tags.Count);
+                Assert.AreEqual("Samples", album.Name);
+                Assert.IsTrue(album.Photos.Count > 0);
+                Assert.IsTrue(album.Photos.First().Tags.Count > 0);
             }
         }
     }

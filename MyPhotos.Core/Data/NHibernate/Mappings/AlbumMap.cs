@@ -1,3 +1,4 @@
+using System;
 using FluentNHibernate.Mapping;
 using MyPhotos.Core.Model;
 
@@ -10,10 +11,11 @@ namespace MyPhotos.Core.Data.NHibernate.Mappings
             Table("Album");
 
             Id(x => x.ID);
-            Map(x => x.Name).Unique();
-            Map(x => x.CreatedDate);
-            Map(x => x.ModifiedDate);
-            HasMany(x => x.Photos).KeyColumn("AlbumID");
+            Map(x => x.Name).Unique().Not.Nullable();
+            Map(x => x.CreatedDate).Not.Nullable();
+            Map(x => x.ModifiedDate).Not.Nullable();
+            HasMany(x => x.Photos).KeyColumn("AlbumID").Cascade.All();
+            References(x => x.CoverPhoto).Column("CoverPhotoID");
         }
     }
 }

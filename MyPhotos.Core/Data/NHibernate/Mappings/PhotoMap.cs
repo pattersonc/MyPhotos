@@ -13,6 +13,8 @@ namespace MyPhotos.Core.Data.NHibernate.Mappings
             Map(x => x.Description);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);
+            Map(x => x.Filename).Not.Nullable();
+            Map(x => x.ThumbFilename).Not.Nullable();
             References(x => x.Album).Column("AlbumID");
             HasManyToMany(x => x.Tags).Cascade.All().Table("PhotoTag");
         }

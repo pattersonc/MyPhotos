@@ -354,3 +354,56 @@ div#title
 {
     width: 6em;
 }
+
+/* Photo */
+#currentPhoto 
+{
+	float: left;
+	width: 800px;
+	overflow:hidden;
+}
+
+#currentPhoto img
+{
+	width: 800px;
+}
+
+.photoNav
+{
+	float: left;
+	width: 150px;
+	
+}
+
+.photoNav img
+{
+	width: 150px;
+}
+
+.photoNav a img
+{
+	border: none;
+}
+
+#prevNextContainer
+{
+	float: right;
+	margin-top: -13px;
+}
+
+.endOfAlbumText 
+{
+	margin: 25px;
+	font-size: 15px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.startOfAlbumText 
+{
+	margin: 25px;
+	font-size: 15px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: right;
+}

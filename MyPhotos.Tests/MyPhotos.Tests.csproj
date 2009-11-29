@@ -64,23 +64,37 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerTests\AlbumControllerTests.cs" />
+    <Compile Include="IntegrationTests\FileStoreTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IntegrationTests\NHibernateCRUDTests.cs" />
     <Compile Include="ServiceTests\AlbumServiceTests.cs" />
+    <Compile Include="ServiceTests\FileStoreServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AuthoringTests.txt" />
+    <EmbeddedResource Include="IntegrationObjs\Desert.jpg" />
+    <EmbeddedResource Include="IntegrationObjs\Lighthouse.jpg" />
+    <EmbeddedResource Include="IntegrationObjs\Penguins.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyPhotos.Core\MyPhotos.Core.csproj">
       <Project>{A6551E0F-8284-42F1-B436-238B344F63D0}</Project>
       <Name>MyPhotos.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ControllerTests\" />
+    <ProjectReference Include="..\MyPhotos.WebUI\MyPhotos.WebUI.csproj">
+      <Project>{C5E65172-ED33-4893-BF0E-59AF10C04DCB}</Project>
+      <Name>MyPhotos.WebUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

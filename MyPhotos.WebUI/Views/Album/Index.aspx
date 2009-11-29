@@ -1,12 +1,12 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MyPhotos.Core.Model.Album>>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Index
+	ViewPage1
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>Index</h2>
+    <h2>ViewPage1</h2>
 
     <table>
         <tr>
@@ -29,7 +29,7 @@
     
         <tr>
             <td>
-                <%= Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
+                <%= Html.ActionLink("Edit", "Edit", new {  id=item.ID  }) %> |
                 <%= Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%>
             </td>
             <td>

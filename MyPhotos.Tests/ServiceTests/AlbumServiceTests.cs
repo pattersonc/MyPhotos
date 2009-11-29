@@ -1,5 +1,7 @@
 using System;
+using System.Data.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MyPhotos.Core.Model;
@@ -16,7 +18,8 @@ namespace MyPhotos.Tests.ServiceTests
         private const int ValidId = 1;
         private const int InvalidId = 2;
         private const int ExceptionId = 3;
-        
+        private List<Album> _albums;
+
         public AlbumServiceTests()
         {
             var mockAlbumRepo = new Mock<IAlbumRepository>();
@@ -30,7 +33,7 @@ namespace MyPhotos.Tests.ServiceTests
             mockAlbumRepo.Setup(p => p.GetById(InvalidId)).Returns((Album)null);
             mockAlbumRepo.Setup(p => p.GetById(ExceptionId)).Throws(new Exception("Repo exception"));
 
-            var albums = new List<Album>();
+            _albums = new List<Album>();
 
             for (int i = 1; i <= 100; i++ )
             {
@@ -39,13 +42,30 @@ namespace MyPhotos.Tests.ServiceTests
                                     ID = i,
                                     CreatedDate = DateTime.Now.AddDays(-i),
                                     ModifiedDate = DateTime.Now.AddSeconds(-i),
-                                    Name = "Album #" + i
+                                    Name = "Album #" + i,
+                                    Photos = new List<Photo>()
                                 };
 
-                albums.Add(album);
+
+                for (int j = 0; j < 51; j++)
+                {
+                    var photo = new Photo()
+                                    {
+                                        Album = album,
+                                        CreatedDate = DateTime.Now.AddMinutes(-i),
+                                        ModifiedDate = DateTime.Now.AddMinutes(-i),
+                                        Description = "Album #" + i +" Photo #" + j,
+                                        Filename = "album" + i + "photo" + j + ".jpg",
+                                        ID = j
+                                    };
+
+                    album.Photos.Add(photo);
+                }
+
+                _albums.Add(album);
             }
 
-            mockAlbumRepo.Setup(p => p.GetAll()).Returns(albums);
+            mockAlbumRepo.Setup(p => p.GetAll()).Returns(_albums);
 
             _albumRepository = mockAlbumRepo.Object;
         }
@@ -88,6 +108,42 @@ namespace MyPhotos.Tests.ServiceTests
             var albumSvc = new AlbumService(_albumRepository);
 
             Assert.AreEqual(100, albumSvc.GetAll().Count);
+        }
+
+        [TestMethod]
+        public void GetNextPhoto_returns_not_null()
+        {
+            var mockAlbumRepo = new Mock<IAlbumRepository>();
+            mockAlbumRepo.Setup(p => p.GetById(It.IsAny<int>())).Returns( _albums.Where(p => p.ID == 50).Single() );
+
+            var albumSvc = new AlbumService(mockAlbumRepo.Object);
+
+            var album = albumSvc.GetById(50);
+
+            var photo = album.Photos.ElementAt(25);
+
+            var nextPhto = albumSvc.GetNextPhoto(photo);
+
+            Assert.IsNotNull(nextPhto);
+            Assert.AreEqual(26, nextPhto.ID);
+        }
+
+        [TestMethod]
+        public void GetPreviousPhoto_returns_not_null()
+        {
+            var mockAlbumRepo = new Mock<IAlbumRepository>();
+            mockAlbumRepo.Setup(p => p.GetById(It.IsAny<int>())).Returns(_albums.Where(p => p.ID == 50).Single());
+
+            var albumSvc = new AlbumService(mockAlbumRepo.Object);
+
+            var album = albumSvc.GetById(50);
+
+            var photo = album.Photos.ElementAt(25);
+
+            var prevPhoto = albumSvc.GetPreviousPhoto(photo);
+
+            Assert.IsNotNull(prevPhoto);
+            Assert.AreEqual(24, prevPhoto.ID);
         }
     }
 }

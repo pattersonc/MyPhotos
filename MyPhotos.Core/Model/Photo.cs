@@ -11,5 +11,7 @@ namespace MyPhotos.Core.Model
         public virtual IList<Tag> Tags { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime ModifiedDate { get; set; }
+        public virtual string Filename { get; set; }
+        public virtual string ThumbFilename { get; set; }
     }
 }

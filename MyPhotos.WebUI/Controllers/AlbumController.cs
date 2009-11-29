@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using MyPhotos.Core.Model;
 using MyPhotos.Core.Repository;
 using MyPhotos.Core.Service;
 
@@ -12,15 +14,17 @@ namespace MyPhotos.WebUI.Controllers
     public class AlbumController : Controller
     {
         private IAlbumService _albumService;
+        private IFileStoreService _fileStoreService;
 
-        public AlbumController() : this(null)
+        public AlbumController() : this(null, null)
         {
             
         }
 
-        public AlbumController(IAlbumService albumService)
+        public AlbumController(IAlbumService albumService, IFileStoreService fileStoreService)
         {
             _albumService = albumService ?? new AlbumService(new AlbumRepository());
+            _fileStoreService = fileStoreService ?? new FileStoreService();
         }
 
         //
@@ -28,12 +32,9 @@ namespace MyPhotos.WebUI.Controllers
 
         public ActionResult Index()
         {
-            var album = _albumService.GetAll();
+            var albums = _albumService.GetAll();
 
-            if (album.Count < 1)
-                RedirectToAction("Create");
-
-            return View(album);
+            return View(albums);
         }
 
         //
@@ -56,13 +57,18 @@ namespace MyPhotos.WebUI.Controllers
         // POST: /Album/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Album album)
         {
             try
             {
-                // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
+                album.CreatedDate = DateTime.Now;
+                album.ModifiedDate = DateTime.Now;
+
+                _albumService.Add(album);
+                _albumService.Save();
+
+                return RedirectToAction("Edit", new { id=album.ID });
             }
             catch
             {
@@ -75,25 +81,67 @@ namespace MyPhotos.WebUI.Controllers
  
         public ActionResult Edit(int id)
         {
-            return View();
+            var album = _albumService.GetById(id);
+
+            if (album == null)
+                return View("AlbumNotFound");
+
+            return View(album);
         }
 
         //
         // POST: /Album/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Album album)
         {
             try
             {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
+                var savedAlbum = _albumService.GetById(id);
+
+                savedAlbum.Name = album.Name;
+
+                _albumService.Save();
+
+                return View(savedAlbum);
             }
             catch
             {
                 return View();
             }
+        }
+
+        [HttpPost]
+        public ActionResult AddPhoto(int id)
+        {
+            try
+            {
+                string filePath = _fileStoreService.SaveNew(Request.Files[0].InputStream);
+
+                string fileName = Path.GetFileName(filePath);
+
+                var photo = new Photo()
+                {
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    Description = "My new photo",
+                    Filename = fileName,
+                };
+
+                var album = _albumService.GetById(id);
+
+                album.Photos.Add(photo);
+
+                _albumService.Save();
+
+                return RedirectToAction("Edit", new {id = id});
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
         }
     }
 }

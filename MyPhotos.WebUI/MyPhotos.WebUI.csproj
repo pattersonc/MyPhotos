@@ -64,15 +64,26 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AlbumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\AppHelper.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\PhotoDetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Content\FileStore\Desert.jpg" />
+    <EmbeddedResource Include="Content\FileStore\Lighthouse.jpg" />
+    <EmbeddedResource Include="Content\FileStore\Penguins.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Album\Create.aspx" />
+    <Content Include="Views\Album\Edit.aspx" />
     <Content Include="Views\Album\Index.aspx" />
+    <Content Include="Views\Photo\Index.aspx" />
+    <Content Include="Views\Test\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.3.2.js" />
