@@ -260,7 +260,6 @@
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:IntegrationTests/f:NHibernateCRUDTests.cs" caret="1131" scrollPosition="0|0" />
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="0" scrollPosition="0|0" />
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:IntegrationTests/f:FileStoreTests.cs" caret="394" scrollPosition="0|0" />
-      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:FileStoreTests.cs" caret="292" scrollPosition="0|0" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:__RESHARPER__DummyWebPages_/f:Index.aspx" caret="388" scrollPosition="0|0" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:TestController.cs" caret="581" scrollPosition="0|14" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:__RESHARPER__DummyWebPages_/f:Index.aspx" caret="0" scrollPosition="0|0" />
@@ -280,7 +279,6 @@
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:AlbumController.cs" caret="392" scrollPosition="0|9" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Model/f:Album.cs" caret="440" scrollPosition="0|0" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Data/d:NHibernate/d:Mappings/f:AlbumMap.cs" caret="463" scrollPosition="0|0" />
-      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:FileStoreTests.cs" caret="414" scrollPosition="0|5" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:FileStoreService.cs" caret="146" scrollPosition="0|0" />
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:IntegrationTests/f:FileStoreTests.cs" caret="201" scrollPosition="0|0" />
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:IntegrationTests/f:FileStoreTests.cs" caret="300" scrollPosition="0|0" />
@@ -291,7 +289,6 @@
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:FileStoreService.cs" caret="1047" scrollPosition="0|24" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:FileStoreService.cs" caret="1579" scrollPosition="0|30" />
       <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:IntegrationTests/f:FileStoreTests.cs" caret="686" scrollPosition="0|0" />
-      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:FileStoreTests.cs" caret="292" scrollPosition="0|0" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:TestController.cs" caret="473" scrollPosition="0|0" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:TestController.cs" caret="660" scrollPosition="0|4" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:TestController.cs" caret="461" scrollPosition="0|4" />

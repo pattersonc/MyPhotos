@@ -1,1 +1,8 @@
 _ReSharper*/
+MyPhotos.Core/bin/
+MyPhotos.Core/obj/
+MyPhotos.Tests/bin/
+MyPhotos.Tests/obj/
+MyPhotos.WebUI/bin/
+MyPhotos.WebUI/obj/
+TestResults/
