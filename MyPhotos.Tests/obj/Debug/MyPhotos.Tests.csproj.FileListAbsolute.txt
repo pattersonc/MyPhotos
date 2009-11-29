@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\ResolveAssemblyReference.cache
+=======
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.pdb
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Castle.Core.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Castle.DynamicProxy2.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\FluentNHibernate.dll
+<<<<<<< HEAD
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Core.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.ByteCode.Castle.dll
@@ -18,13 +22,35 @@ C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\log4net.xml
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.ByteCode.Castle.xml
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.pdb
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.xml
+=======
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Core.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\log4net.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Iesi.Collections.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Castle.DynamicProxy2.xml
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\log4net.xml
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.ByteCode.Castle.xml
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Core.pdb
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\FluentNHibernate.pdb
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\FluentNHibernate.xml
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Iesi.Collections.xml
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.xml
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Castle.Core.xml
+<<<<<<< HEAD
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\MyPhotos.Tests.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\MyPhotos.Tests.pdb
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.WebUI.dll
 C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.WebUI.pdb
+=======
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\MyPhotos.Tests.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\obj\Debug\MyPhotos.Tests.pdb
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.Linq.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\NHibernate.Linq.xml
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.dll
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.pdb
+C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\Moq.xml
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba

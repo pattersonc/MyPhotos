@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8adc2532-9b6f-4735-a97f-3dddf15db4f9" name="chris@CHRISTHINKPAD 2009-11-25 13:07:06" runUser="christhinkpad\chris" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="aaa8ccf6-5eb7-4c53-b29d-84bc77d3315a">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\chris\Work\Patterson\MyPhotos\TestResults\chris_CHRISTHINKPAD 2009-11-25 13_07_06">
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.Linq.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\FluentNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Core\bin\Debug\MyPhotos.Core.dll" />
+      <DeploymentItem filename="C:\Users\chris\Work\Patterson\MyPhotos\bin\nhib\Castle.Core.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-11-25T13:07:06.5661712-05:00" queuing="2009-11-25T13:07:15.9487079-05:00" start="2009-11-25T13:07:16.3397303-05:00" finish="2009-11-25T13:07:43.1712649-05:00" />
+  <TestDefinitions>
+    <UnitTest name="CanAddData" storage="c:\users\chris\work\patterson\myphotos\myphotos.tests\bin\debug\myphotos.tests.dll" id="d10a7591-ddd5-60b3-664e-0deb05ca5257">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5ce05ff8-2f10-4a38-9526-9bcf30f0969f" />
+      <TestMethod codeBase="C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\bin\Debug\MyPhotos.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyPhotos.Tests.UnitTest1, MyPhotos.Tests" name="CanAddData" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d10a7591-ddd5-60b3-664e-0deb05ca5257" executionId="5ce05ff8-2f10-4a38-9526-9bcf30f0969f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5ce05ff8-2f10-4a38-9526-9bcf30f0969f" testId="d10a7591-ddd5-60b3-664e-0deb05ca5257" testName="CanAddData" computerName="CHRISTHINKPAD" duration="00:00:15.4662449" startTime="2009-11-25T13:07:16.5777439-05:00" endTime="2009-11-25T13:07:41.1621500-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MyPhotos.Tests.UnitTest1.CanAddData threw exception:  NHibernate.PropertyAccessException: Invalid Cast (check your mapping for property type mismatches); setter of MyPhotos.Core.Model.Album ---&gt;  System.InvalidCastException: Unable to cast object of type 'NHibernate.Collection.Generic.PersistentGenericBag`1[MyPhotos.Core.Model.Photo]' to type 'System.Collections.Generic.List`1[MyPhotos.Core.Model.Photo]'..</Message>
+          <StackTrace>    at (Object , Object[] , SetterCallback )
+   at NHibernate.Bytecode.Lightweight.AccessOptimizer.SetPropertyValues(Object target, Object[] values)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer.SetPropertyValuesWithOptimizer(Object entity, Object[] values)
+ --- End of inner exception stack trace ---
+    at NHibernate.Tuple.Entity.PocoEntityTuplizer.SetPropertyValuesWithOptimizer(Object entity, Object[] values)
+   at NHibernate.Tuple.Entity.PocoEntityTuplizer.SetPropertyValues(Object entity, Object[] values)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.SetPropertyValues(Object obj, Object[] values, EntityMode entityMode)
+   at NHibernate.Engine.TwoPhaseLoad.InitializeEntity(Object entity, Boolean readOnly, ISessionImplementor session, PreLoadEvent preLoadEvent, PostLoadEvent postLoadEvent)
+   at NHibernate.Loader.Loader.InitializeEntitiesAndCollections(IList hydratedObjects, Object resultSetId, ISessionImplementor session, Boolean readOnly)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at NHibernate.Linq.Visitors.ImmediateResultsVisitor`1.GetElementList(MethodCallExpression call, Int32 count)
+   at NHibernate.Linq.Visitors.ImmediateResultsVisitor`1.HandleSingleCall(MethodCallExpression call)
+   at NHibernate.Linq.Visitors.ImmediateResultsVisitor`1.VisitMethodCall(MethodCallExpression call)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.NHibernateExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ImmediateResultsVisitor`1.GetResults(MethodCallExpression expr)
+   at NHibernate.Linq.Visitors.RootVisitor.HandleImmediateResultsCall(MethodCallExpression call)
+   at NHibernate.Linq.Visitors.RootVisitor.VisitMethodCall(MethodCallExpression expr)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.NHibernateExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.NHibernateQueryTranslator.Translate(Expression expression, QueryOptions queryOptions)
+   at NHibernate.Linq.NHibernateQueryProvider.TranslateExpression(Expression expression)
+   at NHibernate.Linq.NHibernateQueryProvider.Execute(Expression expression)
+   at NHibernate.Linq.QueryProvider.System.Linq.IQueryProvider.Execute[T](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyPhotos.Tests.UnitTest1.CanAddData() in C:\Users\chris\Work\Patterson\MyPhotos\MyPhotos.Tests\IntegrationTests\UnitTest1.cs:line 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

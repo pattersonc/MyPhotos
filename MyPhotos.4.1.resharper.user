@@ -13,6 +13,7 @@
   </NAntValidationSettings>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
+<<<<<<< HEAD
       <Item value="public" priority="12" />
       <Item value="AlbumServiceTests" priority="1" />
       <Item value="void" priority="5" />
@@ -32,21 +33,51 @@
       <Item value="where" priority="1" />
       <Item value="private" priority="3" />
       <Item value="int" priority="8" />
+=======
+      <Item value="public" priority="7" />
+      <Item value="AlbumServiceTests" priority="1" />
+      <Item value="void" priority="2" />
+      <Item value="TestMethod" priority="1" />
+      <Item value="AlbumService" priority="1" />
+      <Item value="albumRepository" priority="1" />
+      <Item value="protected" priority="0" />
+      <Item value="IAlbumRepository" priority="1" />
+      <Item value="_albumRespository" priority="2" />
+      <Item value="new" priority="3" />
+      <Item value="AlbumRepository" priority="0" />
+      <Item value="prop" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="mockAlbumRepo" priority="1" />
+      <Item value="p" priority="0" />
+      <Item value="T" priority="1" />
+      <Item value="where" priority="1" />
+      <Item value="private" priority="2" />
+      <Item value="int" priority="6" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
       <Item value="const" priority="2" />
       <Item value="ValidId" priority="2" />
       <Item value="InvalidId" priority="1" />
       <Item value="ExceptionId" priority="1" />
       <Item value="Exception" priority="0" />
+<<<<<<< HEAD
       <Item value="Photo" priority="1" />
       <Item value="ID" priority="1" />
       <Item value="Album" priority="16" />
       <Item value="CreatedDate" priority="1" />
       <Item value="DateTime" priority="3" />
+=======
+      <Item value="Photo" priority="0" />
+      <Item value="ID" priority="0" />
+      <Item value="Album" priority="11" />
+      <Item value="CreatedDate" priority="0" />
+      <Item value="DateTime" priority="1" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
       <Item value="Description" priority="0" />
       <Item value="ModifiedDate" priority="0" />
       <Item value="FieldAccessException" priority="2" />
       <Item value="_albumRepository" priority="1" />
       <Item value="albumSvc" priority="0" />
+<<<<<<< HEAD
       <Item value="try" priority="2" />
       <Item value="null" priority="0" />
       <Item value="album" priority="4" />
@@ -54,15 +85,29 @@
       <Item value="IRepository" priority="0" />
       <Item value="TagRepository" priority="0" />
       <Item value="System" priority="1" />
+=======
+      <Item value="try" priority="1" />
+      <Item value="null" priority="0" />
+      <Item value="album" priority="1" />
+      <Item value="id" priority="0" />
+      <Item value="IRepository" priority="0" />
+      <Item value="TagRepository" priority="0" />
+      <Item value="System" priority="0" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
       <Item value="Diagnostics" priority="0" />
       <Item value="DebuggerBrowsableState" priority="0" />
       <Item value="Debug" priority="0" />
       <Item value="ex" priority="0" />
+<<<<<<< HEAD
       <Item value="return" priority="4" />
+=======
+      <Item value="return" priority="0" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
       <Item value="Func" priority="1" />
       <Item value="func" priority="0" />
       <Item value="object" priority="0" />
       <Item value="AssertInconclusiveException" priority="1" />
+<<<<<<< HEAD
       <Item value="_albumService" priority="1" />
       <Item value="List" priority="1" />
       <Item value="albums" priority="3" />
@@ -129,6 +174,11 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
       <Item value="Setup" priority="1" />
+=======
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Setup" priority="0" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
       <Item value="Object" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ISession">
@@ -139,6 +189,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:MyPhotos.Core.Repository.IAlbumRepository">
       <Item value="GetById" priority="1" />
+<<<<<<< HEAD
       <Item value="GetAll" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
@@ -155,17 +206,37 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
       <Item value="WriteLine" priority="1" />
+=======
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Throws" priority="0" />
+      <Item value="Returns" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddDays" priority="0" />
+      <Item value="AddMinutes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine" priority="0" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Exception">
       <Item value="Message" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:MyPhotos.Core.Service.AlbumService">
       <Item value="GetById" priority="0" />
+<<<<<<< HEAD
       <Item value="GetAll" priority="0" />
+=======
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
       <Item value="IsNotNull" priority="0" />
       <Item value="IsNull" priority="0" />
+<<<<<<< HEAD
       <Item value="AreEqual" priority="0" />
       <Item value="IsTrue" priority="0" />
     </ItemStatistics>
@@ -243,6 +314,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Web.Mvc.FormMethod">
       <Item value="Post" priority="0" />
+=======
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
@@ -251,6 +324,7 @@
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:NHibernateRepositoryBase.cs" caret="228" scrollPosition="0|0" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:AlbumRepository.cs" caret="207" scrollPosition="0|0" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:LogService.cs" caret="3417" scrollPosition="0|0" />
+<<<<<<< HEAD
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:__RESHARPER__DummyWebPages_/f:Index.aspx" caret="0" scrollPosition="0|0" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:AlbumController.cs" caret="613" scrollPosition="0|6" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Data/d:NHibernate/f:SessionFactoryFactory.cs" caret="1105" scrollPosition="0|0" />
@@ -297,6 +371,33 @@
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:TestController.cs" caret="461" scrollPosition="0|4" />
       <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:__RESHARPER__DummyWebPages_/f:Index.aspx" caret="388" scrollPosition="0|0" />
       <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:FileStoreService.cs" caret="657" scrollPosition="0|10" />
+=======
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="1803" scrollPosition="0|28" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:AlbumService.cs" caret="724" scrollPosition="0|5" />
+      <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:AlbumController.cs" caret="0" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:NHibernateRepositoryBase.cs" caret="1107" scrollPosition="0|15" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:NHibernateRepositoryBase.cs" caret="570" scrollPosition="0|6" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:NHibernateRepositoryBase.cs" caret="288" scrollPosition="0|6" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="471" scrollPosition="0|10" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="1465" scrollPosition="0|10" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:NHibernateRepositoryBase.cs" caret="1483" scrollPosition="0|45" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:AlbumService.cs" caret="650" scrollPosition="0|0" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:AlbumRepository.cs" caret="546" scrollPosition="0|0" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:AlbumRepository.cs" caret="436" scrollPosition="0|0" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Repository/f:AlbumRepository.cs" caret="207" scrollPosition="0|0" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:LogService.cs" caret="523" scrollPosition="0|6" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:LogService.cs" caret="3417" scrollPosition="0|52" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:AlbumService.cs" caret="724" scrollPosition="0|16" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:AlbumService.cs" caret="724" scrollPosition="0|19" />
+      <File id="A6551E0F-8284-42F1-B436-238B344F63D0/d:Service/f:AlbumService.cs" caret="724" scrollPosition="0|19" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="1299" scrollPosition="0|13" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="1697" scrollPosition="0|13" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="2182" scrollPosition="0|27" />
+      <File id="2AFB2D0D-9100-4BFF-84B7-DC99D6A59BD3/d:ServiceTests/f:AlbumServiceTests.cs" caret="2168" scrollPosition="0|30" />
+      <File id="C5E65172-ED33-4893-BF0E-59AF10C04DCB/d:Controllers/f:AlbumController.cs" caret="281" scrollPosition="0|0" />
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>

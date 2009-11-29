@@ -5,11 +5,18 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyPhotos.Core.Data.NHibernate;
 using MyPhotos.Core.Model;
+<<<<<<< HEAD
 using MyPhotos.Core.Service;
 using NHibernate;
 using NHibernate.Linq;
 
 namespace MyPhotos.Test.IntegrationTests
+=======
+using NHibernate;
+using NHibernate.Linq;
+
+namespace MyPhotos.Tests
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
 {
     /// <summary>
     /// Summary description for NHibernateCRUDTests
@@ -73,7 +80,11 @@ namespace MyPhotos.Test.IntegrationTests
         {
             // recreate db for fresh start
             SessionFactoryFactory.DropSchema();
+<<<<<<< HEAD
             SessionFactoryFactory.CreateSchema();
+=======
+            SessionFactoryFactory.CreateSchema();           
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
         }
         
         public void AddTestData()
@@ -84,6 +95,7 @@ namespace MyPhotos.Test.IntegrationTests
                 {
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
+<<<<<<< HEAD
                     Name = "Samples"
                 };
 
@@ -135,6 +147,31 @@ namespace MyPhotos.Test.IntegrationTests
             
             }
 
+=======
+                    Name = "MyAlbum"
+                };
+
+
+                var photo = new Photo()
+                {
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    Description = "MyPhoto",
+                    Album = album
+                };
+
+                var tags = new List<Tag>();
+
+                for (int i = 1; i <= 5; i++)
+                    tags.Add(new Tag() { Name = "Tag" + i });
+
+                photo.Tags = tags;
+
+                session.SaveOrUpdate(album);
+                session.SaveOrUpdate(photo);
+                session.Flush();
+            }
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
         }
 
         [TestMethod]
@@ -145,6 +182,7 @@ namespace MyPhotos.Test.IntegrationTests
             using(var session = _sessionFactory.OpenSession())
             {
                 var album = (from p in session.Linq<Album>()
+<<<<<<< HEAD
                             where p.Name == "Samples"
                             select p).Single();
 
@@ -152,6 +190,17 @@ namespace MyPhotos.Test.IntegrationTests
                 Assert.AreEqual("Samples", album.Name);
                 Assert.IsTrue(album.Photos.Count > 0);
                 Assert.IsTrue(album.Photos.First().Tags.Count > 0);
+=======
+                            where p.Name == "MyAlbum"
+                            select p).Single();
+
+                Assert.IsNotNull(album);
+                Assert.AreEqual("MyAlbum", album.Name);
+                Assert.AreEqual(1, album.Photos.Count);
+                Assert.AreEqual("MyPhoto", album.Photos.Single().Description);
+                Assert.IsNotNull(album.Photos.Single().Tags);
+                Assert.AreEqual(5, album.Photos.Single().Tags.Count);
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
             }
         }
     }

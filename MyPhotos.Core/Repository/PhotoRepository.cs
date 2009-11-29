@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 using System;
+=======
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
 using System.Collections.Generic;
 using System.Linq;
 using MyPhotos.Core.Model;
 
 namespace MyPhotos.Core.Repository
 {
+<<<<<<< HEAD
     public interface IPhotoRepository
     {
         IList<Photo> GetAll();
@@ -28,5 +32,10 @@ namespace MyPhotos.Core.Repository
         {
             return _session.Get<Photo>(id);
         }
+=======
+    public class PhotoRepository : NHibernateRepositoryBase<Album>
+    {
+        
+>>>>>>> 9ba4c3fe087f13567002771f2e073635cfcbf8ba
     }
 }
