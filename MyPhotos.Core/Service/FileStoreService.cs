@@ -11,6 +11,7 @@ namespace MyPhotos.Core.Service
     public interface IFileStoreService
     {
         string SaveNew(Stream inputSteam);
+        string CreateThumbnail(string fileName);
         List<FileInfo> GetAll();
     }
 
@@ -69,7 +70,7 @@ namespace MyPhotos.Core.Service
 
         public string CreateThumbnail(string fileName)
         {
-            var fi = new FileInfo(fileName);
+            var fi = new FileInfo(Path.Combine(_storeLocation, fileName));
 
             if (!fi.Exists)
                 throw new ArgumentException("File does not exist");
@@ -79,9 +80,9 @@ namespace MyPhotos.Core.Service
 
             string thumbFileName = withoutExt + "_thumb" + ext;
 
-            fi.CopyTo(thumbFileName);
+            var copy = fi.CopyTo(Path.Combine(_storeLocation, thumbFileName));
             
-            ImageUtil.ResizeImage(thumbFileName, ThumbWidthPx);
+            ImageUtil.ResizeImage(copy.FullName, ThumbWidthPx);
 
             return thumbFileName;
         }

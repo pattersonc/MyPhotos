@@ -120,6 +120,7 @@ namespace MyPhotos.Test.IntegrationTests
                 };
 
                 album.Photos = new List<Photo>() { photo1, photo2, photo3};
+                album.CoverPhoto = photo1;
 
                 var tag = new Tag()
                 {
@@ -138,10 +139,8 @@ namespace MyPhotos.Test.IntegrationTests
         }
 
         [TestMethod]
-        public void CanDataAndRetrieveData()
+        public void CanRetrieveData()
         {
-
-
             using(var session = _sessionFactory.OpenSession())
             {
                 var album = (from p in session.Linq<Album>()

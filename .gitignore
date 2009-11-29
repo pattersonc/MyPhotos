@@ -5,4 +5,5 @@ MyPhotos.Tests/bin/
 MyPhotos.Tests/obj/
 MyPhotos.WebUI/bin/
 MyPhotos.WebUI/obj/
+MyPhotos.WebUI/Content/FileStore
 TestResults/

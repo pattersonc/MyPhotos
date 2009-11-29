@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>Edit</h2>
+    <h2><%= Model.Name %></h2>
 
 
     <% using (Html.BeginForm()) {%>
@@ -25,8 +25,10 @@
             <li>
                 <a href="<%= Url.Action("Index", "Photo", new { id = photo.ID }) %>">
                 <img alt="<%= photo.Description %>" src="<%= Html.ImgageUrl(photo.ThumbFilename) %>" />
-                <%= Html.Label(photo.Description) %>
                 </a>
+                <%= Html.Label(photo.Description) %>
+                <%= Html.RadioButton("CoverPhotoID", photo.ID, Model.CoverPhoto.ID == photo.ID, new { name="CoverPhoto"}) %>
+                <span>Is album cover</span>
             </li>
     
             <% } %>

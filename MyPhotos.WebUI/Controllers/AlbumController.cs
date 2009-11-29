@@ -93,17 +93,23 @@ namespace MyPhotos.WebUI.Controllers
         // POST: /Album/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, Album album)
+        public ActionResult Edit(int id, Album postedAlbum)
         {
             try
             {
-                var savedAlbum = _albumService.GetById(id);
+                var album = _albumService.GetById(id);
 
-                savedAlbum.Name = album.Name;
+                album.Name = postedAlbum.Name;
+
+                int coverPhotoID = Convert.ToInt32(Request.Form["CoverPhotoID"]);
+
+                var photo = album.Photos.Where(p => p.ID == coverPhotoID).Single();
+
+                album.CoverPhoto = photo;
 
                 _albumService.Save();
 
-                return View(savedAlbum);
+                return View(album);
             }
             catch
             {
@@ -119,6 +125,7 @@ namespace MyPhotos.WebUI.Controllers
                 string filePath = _fileStoreService.SaveNew(Request.Files[0].InputStream);
 
                 string fileName = Path.GetFileName(filePath);
+                string thumbnail = _fileStoreService.CreateThumbnail(fileName);
 
                 var photo = new Photo()
                 {
@@ -126,6 +133,7 @@ namespace MyPhotos.WebUI.Controllers
                     ModifiedDate = DateTime.Now,
                     Description = "My new photo",
                     Filename = fileName,
+                    ThumbFilename = thumbnail
                 };
 
                 var album = _albumService.GetById(id);

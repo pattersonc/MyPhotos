@@ -15,7 +15,7 @@ namespace MyPhotos.Core.Data.NHibernate.Mappings
             Map(x => x.CreatedDate).Not.Nullable();
             Map(x => x.ModifiedDate).Not.Nullable();
             HasMany(x => x.Photos).KeyColumn("AlbumID").Cascade.All();
-            References(x => x.CoverPhoto).Column("CoverPhotoID");
+            References(x => x.CoverPhoto).Column("CoverPhotoID").Cascade.All().Not.Nullable();
         }
     }
 }
