@@ -52,7 +52,7 @@
     <div class="clear"></div>
     <p>
         <%=Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) %> |
-        <%=Html.ActionLink("Back to List", "Index") %>
+        <%=Html.ActionLink("Back to Albums", "Index", "Album", new { id = Model.CurrentPhoto.Album.ID}, new object()) %>
     </p>
 
 </asp:Content>

@@ -6,49 +6,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>ViewPage1</h2>
+    <h2>My Albums</h2>
 
-    <table>
-        <tr>
-            <th></th>
-            <th>
-                ID
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                CreatedDate
-            </th>
-            <th>
-                ModifiedDate
-            </th>
-        </tr>
-
+    <ul class="album">
     <% foreach (var item in Model) { %>
-    
-        <tr>
-            <td>
-                <%= Html.ActionLink("Edit", "Edit", new {  id=item.ID  }) %> |
-                <%= Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%>
-            </td>
-            <td>
-                <%= Html.Encode(item.ID) %>
-            </td>
-            <td>
-                <%= Html.Encode(item.Name) %>
-            </td>
-            <td>
-                <%= Html.Encode(String.Format("{0:g}", item.CreatedDate)) %>
-            </td>
-            <td>
-                <%= Html.Encode(String.Format("{0:g}", item.ModifiedDate)) %>
-            </td>
-        </tr>
-    
+    <li>
+        <a href="<%= Url.Action("Edit", "Album", new { id = item.ID }) %>">
+        <img alt="<%= item.Name %>" src="<%= Html.ImgageUrl(item.CoverPhoto.ThumbFilename) %>" />
+        </a>
+        <%= Html.ActionLink("Edit", "Edit", new {  id=item.ID  }) %> |
+        <%= Html.ActionLink("View", "Index", "Photo", new { id=item.Photos.First().ID }, new object())%>
+    </li>
     <% } %>
-
-    </table>
+    </ul>
 
     <p>
         <%= Html.ActionLink("Create New", "Create") %>

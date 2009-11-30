@@ -19,7 +19,7 @@
                 <%= Html.ValidationMessageFor(model => model.Name) %>
             </p>
             
-            <ul>
+            <ul class="album">
             <% foreach (var photo in Model.Photos) { %>
     
             <li>
@@ -33,6 +33,7 @@
     
             <% } %>
             </ul>
+            <div class="clear"></div>
             <p>
                 <input type="submit" value="Save" />
             </p>

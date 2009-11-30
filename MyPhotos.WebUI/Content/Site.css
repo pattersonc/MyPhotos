@@ -407,3 +407,28 @@ div#title
 	text-transform: uppercase;
 	text-align: right;
 }
+
+/* album edit */
+
+.album
+{
+  float: left;
+  width: 880px;
+  padding: 0;
+  list-style: none;	
+}
+
+.album li
+{
+  float: left;
+  margin: 10px;
+  padding: 0px;
+  width: 200px;
+}
+
+.album img
+{
+	border: none;
+	width:200px;
+	overflow: hidden;
+}

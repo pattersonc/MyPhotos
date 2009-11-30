@@ -61,6 +61,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\AlbumArea\AreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AlbumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -116,7 +117,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\AlbumArea\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\AlbumArea\Controllers\" />
+    <Folder Include="Areas\AlbumArea\Models\" />
+    <Folder Include="Areas\AlbumArea\Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
